@@ -9,4 +9,17 @@ public class Quadrilateral {
 		this.c = c;
 		this.d = d;
 	}
+	
+	public double perimeter() {
+		return a.distance(b) + b.distance(c) + c.distance(d) + d.distance(a);
+	}
+	
+	public boolean isSquare() {
+		double sideLength = a.distance(b);
+		if (sideLength != b.distance(c) || sideLength != c.distance(d) || sideLength != d.distance(a)) {
+			return false;
+		}
+		
+		
+	}
 }

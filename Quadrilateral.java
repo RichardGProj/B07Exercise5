@@ -14,12 +14,12 @@ public class Quadrilateral {
 		return a.distance(b) + b.distance(c) + c.distance(d) + d.distance(a);
 	}
 	
-	public boolean isSquare() {
+	public boolean isRhombus() {
 		double sideLength = a.distance(b);
 		if (sideLength != b.distance(c) || sideLength != c.distance(d) || sideLength != d.distance(a)) {
 			return false;
 		}
 		
-		
+		return true;
 	}
 }
